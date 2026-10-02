@@ -5,58 +5,87 @@
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Supplements"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#0f6e5c">
 <link rel="apple-touch-icon" href="data:image/png;base64,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"><link rel="icon" href="data:image/png;base64,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">
 <style>
-:root{--bg:#e6e9eb;--cd:#f6f7f8;--ink:#14212b;--mut:#56646f;--ac:#0f6e5c;--ax:#fff;--wr:#b4441c;--ln:#c9d0d5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10181e;--cd:#1a252d;--ink:#e8edf0;--mut:#9aa9b4;--ac:#4fc3a8;--ax:#06201a;--wr:#f08a5d;--ln:#2c3a44}}
-:root[data-theme="dark"]{--bg:#10181e;--cd:#1a252d;--ink:#e8edf0;--mut:#9aa9b4;--ac:#4fc3a8;--ax:#06201a;--wr:#f08a5d;--ln:#2c3a44}
+:root{--bg:#f2f3f5;--sf:#fff;--ink:#101828;--mut:#667085;--ln:#e6e8ec;--ac:#0b7a66;--on:#fff;--acs:#d9f2ec;--wr:#9a4a07;--wrs:#fdf0d0;--s1:#e9a928;--s2:#e8742c;--s3:#2c9b6b;--s4:#3a78d6;--s5:#6c5cd2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1318;--sf:#182028;--ink:#edf0f3;--mut:#95a0ae;--ln:#26303a;--ac:#4fcab0;--on:#062a23;--acs:#153a32;--wr:#f4a458;--wrs:#392915;--s1:#f0b840;--s2:#f08a4a;--s3:#46bd8a;--s4:#5b97ee;--s5:#8c7ee6}}
+:root[data-theme="dark"]{--bg:#0e1318;--sf:#182028;--ink:#edf0f3;--mut:#95a0ae;--ln:#26303a;--ac:#4fcab0;--on:#062a23;--acs:#153a32;--wr:#f4a458;--wrs:#392915;--s1:#f0b840;--s2:#f08a4a;--s3:#46bd8a;--s4:#5b97ee;--s5:#8c7ee6}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 "Avenir Next","Segoe UI",system-ui,sans-serif}
-header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:12px 14px 8px;z-index:2;border-bottom:1px solid var(--ln)}
-h1{font-size:20px;margin:0 0 8px}
-.tabs{display:flex;gap:8px}
-.tabs button,.chip{border:1px solid var(--ln);background:var(--cd);color:var(--ink);padding:9px 14px;border-radius:8px;font:inherit;font-weight:600}
-.tabs button{flex:1}
-.on{background:var(--ac)!important;color:var(--ax)!important;border-color:var(--ac)!important}
-main{padding:12px 14px 40px;max-width:640px;margin:auto}
-input[type=search]{width:100%;padding:11px;border-radius:8px;border:1px solid var(--ln);background:var(--cd);color:var(--ink);font:inherit}
-.chips{display:flex;gap:6px;overflow-x:auto;padding:10px 0}
-.chip{white-space:nowrap;padding:6px 12px;font-weight:500}
-details{background:var(--cd);border:1px solid var(--ln);border-radius:8px;margin:8px 0;padding:10px 12px}
-summary{cursor:pointer;display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline}
-summary b{font-size:16px}.t{color:var(--mut);font-size:13px}
-.in{color:var(--ac);font-style:normal;font-weight:700;margin-left:auto}
-details p{margin:8px 0 0}.k{color:var(--mut)}
-.btn{margin-top:10px;padding:10px 14px;border-radius:8px;border:0;background:var(--ac);color:var(--ax);font:inherit;font-weight:600}
-.btn.o{background:none;border:1px solid var(--ln);color:var(--ink)}
-.wr{border-left:4px solid var(--wr);background:var(--cd);padding:8px 12px;margin:8px 0;border-radius:4px}
-h2{font-size:16px;margin:18px 0 4px;color:var(--mut)}
-.row{display:flex;align-items:center;gap:10px;background:var(--cd);border:1px solid var(--ln);border-radius:8px;padding:8px 10px;margin:6px 0}
-.row label{flex:1;display:flex;gap:10px;align-items:center}
-.row input[type=checkbox]{width:22px;height:22px;accent-color:var(--ac)}
-.row select{max-width:96px;background:var(--bg);color:var(--ink);border:1px solid var(--ln);border-radius:6px;padding:4px}
-.x{border:0;background:none;color:var(--mut);font-size:20px;padding:0 4px}
-.dn{text-decoration:line-through;color:var(--mut)}
-.em,.ft{color:var(--mut);font-size:13px}
-.row input:not([type=checkbox]){min-width:0;flex:1;background:var(--bg);color:var(--ink);border:1px solid var(--ln);border-radius:6px;padding:7px;font:inherit}
-.row .nm{flex:1;display:flex;flex-direction:column;min-width:0}
-.row .nm .ds{flex:none;border:0;border-bottom:1px solid var(--ln);border-radius:0;background:none;color:var(--mut);font-size:13px;padding:2px 0}
-.row.add{flex-wrap:wrap}.row.add select{max-width:none}
-h2 input{font:inherit;background:var(--cd);color:var(--ink);border:1px solid var(--ln);border-radius:6px;padding:2px 6px;margin-left:8px}
-.x.sp{font-size:12px;border:1px solid var(--ln);border-radius:6px;padding:3px 6px}
-.wt{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:14px}
-.wt input{flex:1;accent-color:var(--ac)}.wt b{min-width:104px;text-align:right}
-.dz{background:var(--bg);border-radius:6px;padding:8px 10px}
-textarea{width:100%;height:190px;margin-top:10px;background:var(--cd);color:var(--ink);border:1px solid var(--ln);border-radius:8px;padding:8px;font:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 ui-rounded,"SF Pro Rounded","Avenir Next",system-ui,sans-serif;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit;border:0;background:none;padding:0;cursor:pointer}
+main{max-width:640px;margin:0 auto;padding:0 16px 130px}
+h1{font-size:34px;line-height:1.1;margin:0;font-weight:800;letter-spacing:-.02em}
+.top{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:22px 4px 14px}
+.mut{color:var(--mut);font-size:15px}
+.rb{width:46px;height:46px;flex:none;border-radius:50%;background:var(--ac);color:var(--on);display:grid;place-items:center}
+.rb svg{width:22px;height:22px}
+.prog{display:flex;align-items:center;gap:16px;background:var(--sf);border-radius:20px;padding:16px 18px;margin:0 0 12px}
+.prog b{font-size:22px;display:block}
+.bn{background:var(--wrs);color:var(--wr);border-radius:14px;padding:11px 14px;margin:8px 0;font-size:15px}
+.slot{margin:22px 0 0}
+.sh{display:flex;align-items:center;gap:10px;padding:0 4px 8px}
+.sh h3{margin:0;font-size:19px;flex:1}
+.sd{width:12px;height:12px;border-radius:50%;flex:none}
+input[type=time]{font:inherit;font-size:16px;color:var(--ink);background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:6px 10px}
+.grp{background:var(--sf);border-radius:18px;overflow:hidden}
+.it{display:flex;align-items:center;gap:14px;padding:13px 16px;min-height:62px;cursor:pointer}
+.it+.it{border-top:1px solid var(--ln)}
+.it>svg{width:20px;height:20px;color:var(--mut);flex:none}
+.ck{width:36px;height:36px;flex:none;border-radius:50%;border:2.5px solid var(--c,var(--ac));display:grid;place-items:center;color:transparent;transition:background .15s}
+.ck.on{background:var(--c,var(--ac));color:#fff}
+.ck svg{width:18px;height:18px}
+.tx{flex:1;min-width:0}.nm{font-weight:650}
+.ds{color:var(--mut);font-size:14px}
+.dn .nm{color:var(--mut);text-decoration:line-through}
+.dot{width:12px;height:12px;border-radius:50%;flex:none}
+.in{color:var(--ac);font-weight:700;font-size:14px}
+.ad{width:38px;height:38px;border-radius:50%;background:var(--acs);color:var(--ac);display:grid;place-items:center;flex:none}
+.ad svg{width:20px;height:20px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 10px;scrollbar-width:none}
+.chip{flex:none;padding:8px 14px;border-radius:999px;background:var(--sf);border:1px solid var(--ln);font-size:15px;font-weight:600}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip.pr{background:var(--acs);border-color:transparent;color:var(--ac)}
+.chip.pr.on{background:var(--ac);color:var(--on)}
+.search{width:100%;font:inherit;font-size:17px;padding:13px 16px;border-radius:14px;border:0;background:var(--sf);color:var(--ink);margin-bottom:10px;-webkit-appearance:none}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--sf);background:color-mix(in srgb,var(--sf) 92%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--ln);display:flex;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));z-index:5}
+nav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600;color:var(--mut);padding:6px 0}
+nav button.on{color:var(--ac)}
+nav svg{width:26px;height:26px}
+#shade{position:fixed;inset:0;background:rgba(10,15,20,.45);opacity:0;pointer-events:none;transition:opacity .2s;z-index:8}
+#shade.on{opacity:1;pointer-events:auto}
+#sheet{position:fixed;left:0;right:0;bottom:0;max-height:88%;overflow:auto;background:var(--sf);border-radius:24px 24px 0 0;padding:10px 20px calc(24px + env(safe-area-inset-bottom,0px));transform:translateY(105%);transition:transform .25s ease;z-index:9;max-width:640px;margin:0 auto}
+#sheet.on{transform:none}
+.grab{width:40px;height:5px;border-radius:3px;background:var(--ln);margin:0 auto 14px}
+.sh2{display:flex;gap:12px;align-items:center;margin-bottom:8px}
+.sh2 h2{margin:0;font-size:25px;line-height:1.15}
+#sheet p{margin:8px 0}
+.box{background:var(--bg);border-radius:14px;padding:12px 14px;margin:12px 0;font-size:15px}
+.box b{display:block;font-size:13px;color:var(--mut);font-weight:600;margin-bottom:2px}
+.fld{margin-top:10px}.fld label{display:block;font-size:13px;color:var(--mut);font-weight:600}
+.fld input,.fld select{width:100%;margin-top:4px;font:inherit;font-size:17px;padding:12px;border-radius:12px;border:1px solid var(--ln);background:var(--sf);color:var(--ink)}
+.btn{display:block;width:100%;padding:15px;border-radius:14px;background:var(--ac);color:var(--on);font-weight:700;margin-top:12px;text-align:center}
+.btn.o{background:var(--bg);color:var(--ink)}.btn.dg{background:var(--wrs);color:var(--wr)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cb{width:24px;height:24px;accent-color:var(--ac);flex:none}
+textarea{width:100%;height:190px;margin-top:10px;background:var(--sf);color:var(--ink);border:1px solid var(--ln);border-radius:14px;padding:10px;font:inherit;font-size:15px}
+.ic{width:42px;height:42px;flex:none;border-radius:14px;display:grid;place-items:center;line-height:1}
+.ic svg{width:58%;height:58%}
+.ci{width:16px;height:16px;margin-right:6px;flex:none}.ic .ci{margin:0}
+.chip{display:inline-flex;align-items:center}
+.se .ci{width:26px;height:26px;margin:0;display:block}
+.ic.sm{width:38px;height:38px;font-size:20px;border-radius:12px}.ic.lg{width:54px;height:54px;font-size:30px;border-radius:16px}
+.se{display:grid;place-items:center;width:28px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{display:flex;align-items:center;gap:10px;text-align:left;background:var(--sf);border-radius:16px;padding:10px 12px}
+.tile .t{font-weight:650;font-size:15px;line-height:1.2}
+.lk{color:var(--ac);font-weight:700;text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+.sw{display:flex;gap:8px;flex-wrap:wrap;padding:14px 16px}.sw+.it{border-top:1px solid var(--ln)}
+.swb{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:2px solid var(--ln);font-weight:600;font-size:15px}
+.swb.on{border-color:var(--ac)}.swb i{width:16px;height:16px;border-radius:50%}
+.sel{font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:1px solid var(--ln);border-radius:10px;padding:8px 10px}
+@media(prefers-reduced-motion:reduce){#sheet,#shade,.ck{transition:none}}
 </style></head><body>
-<header><h1>Supplement Guide</h1>
-<div class="wt"><span>Body weight</span><input type="range" id="wr" min="100" max="350" step="5" oninput="setW(this.value)"><b id="wv"></b></div>
-<div class="tabs" style="margin-top:8px"><button id="t1" class="on" onclick="tab(1)">Library</button><button id="t2" onclick="tab(2)">My Day</button></div></header>
-<main>
-<noscript><div class="wr">This viewer blocks JavaScript, so the app can't load. Open this file in Safari or from your GitHub Pages link.</div></noscript>
-<section id="v1"><input type="search" id="q" placeholder="Search: magnesium, sleep, joints..." oninput="lib()">
-<div class="chips" id="chips"></div><div class="em">By problem</div><div class="chips" id="pchips"></div><div id="pnote"></div><div class="em" id="cnt"></div><div id="list"></div></section>
-<section id="v2" hidden><div id="day"></div></section>
-<p class="ft">Brand picks are common third-party-tested options from general knowledge, and formulas change. Look for USP, NSF, Informed Sport or ConsumerLab seals and check the bottle. Weight-based doses are typical research ranges, not a prescription. Other supplements use fixed doses that don't change with weight. Check with your doctor before adding anything, especially if you start taking medications.</p>
-</main>
+<noscript><div class="bn" style="margin:16px">This viewer blocks JavaScript, so the app can't load. Open this file in Safari or from your GitHub Pages link.</div></noscript>
+<main id="view"></main><nav id="tabs"></nav><div id="shade" onclick="closeSheet()"></div><div id="sheet"></div>
 <script>
 const SL={a:'Wake-up, empty stomach',b:'Breakfast',l:'Lunch',d:'Dinner',s:'Bedtime',x:'Any time with food'};
 const RAW=`Magnesium glycinate|Minerals|Glycinate / bisglycinate|s|Calming, gentle on gut. 200-400 mg elemental.|5c
@@ -346,7 +375,6 @@ Calcium|Calcium citrate from Thorne or Pure Encapsulations. Food first.|Plain ca
 Iron|Iron bisglycinate such as Thorne, after a blood test.|Taking iron without testing ferritin first.
 Selenium|Selenomethionine 100-200 mcg from Thorne or Pure Encapsulations.|Doses over 400 mcg a day.
 Vitamin C|Thorne, NOW, or Pure Encapsulations. Buffered if your stomach is sensitive.|Mega 5,000 mg doses.`.split('\n').forEach(r=>{const[n,b,a]=r.split('|');X[n]=[b,a]});
-const bi=d=>{const x=X[d.n]||CB[d.c];return x?`<p class="by"><span class="k">Good picks:</span> ${x[0]}</p><p class="by"><span class="k">Avoid:</span> ${x[1]}</p>`:''};
 const START=['Vitamin D3','Fish oil','Creatine','Magnesium glycinate','CoQ10','Vitamin B12'];
 const P={};
 `H. pylori|Needs a breath or stool test. The cure is a prescription antibiotic combo from a doctor. These are add-ons for stomach lining and side effects only.|Mastic gum;Zinc carnosine;DGL licorice;Probiotic;Sulforaphane;Black seed oil;Aged garlic
@@ -371,22 +399,12 @@ Immune / colds||Vitamin D3;Vitamin C;Zinc;Elderberry;Quercetin;Probiotic;Seleniu
 Nerve tingling|Numbness or tingling in hands or feet should get checked (B12, blood sugar).|Benfotiamine (B1);Vitamin B12;Alpha-lipoic acid;Folate;Carnitine
 Eye health||Lutein + zeaxanthin;Astaxanthin;Fish oil`.split('\n').forEach(r=>{const[k,n,l]=r.split('|');P[k]={n:(n?n+' ':'')+'Common options, not cures. See a doctor if it persists.',s:new Set(l.split(';').map(x=>D.findIndex(d=>d.n===x)).filter(i=>i>=0))}});
 const $=id=>document.getElementById(id);
-let S={plan:[],done:{},times:{}},cat='All',pick=false,sw=false,pb='';
+let S={plan:[],done:{},times:{}};
 try{S=JSON.parse(localStorage.getItem('supp1'))||S}catch(e){}
 if(!S.plan){S.plan=Object.entries(S.stack||{}).map(([i,s])=>({k:'m'+i,i:+i,n:D[+i].n,s,d:''}));delete S.stack}
 S.done=S.done||{};S.times=S.times||{};S.wt=S.wt||190;
 function save(){try{localStorage.setItem('supp1',JSON.stringify(S))}catch(e){}}
 const today=()=>new Date().toLocaleDateString('en-CA');
-function tab(n){$('v1').hidden=n!=1;$('v2').hidden=n!=2;$('t1').className=n==1?'on':'';$('t2').className=n==2?'on':'';n==1?lib():day()}
-function chips(){const C=['All','Picks for 50+','Scales with weight',...new Set(D.map(d=>d.c))];
-$('chips').innerHTML=C.map(c=>`<button class="chip ${(c==='Picks for 50+'?pick:c==='Scales with weight'?sw:cat===c&&!pick&&!sw)?'on':''}" onclick="setCat('${c}')">${c}</button>`).join('')}
-function pchips(){$('pchips').innerHTML=Object.keys(P).map(p=>`<button class="chip ${pb===p?'on':''}" onclick="setProb('${p}')">${p}</button>`).join('')}
-function setProb(p){pb=pb===p?'':p;if(pb){cat='';pick=false;sw=false}else cat='All';chips();pchips();lib()}
-function setCat(c){pb='';pick=c==='Picks for 50+';sw=c==='Scales with weight';cat=pick||sw?'All':c;chips();pchips();lib()}
-function lib(){const q=$('q').value.toLowerCase();
-const L=D.filter(d=>(pb?P[pb].s.has(d.i):(cat==='All'||d.c===cat))&&(!pick||d.g.includes('5'))&&(!sw||W[d.n])&&(d.n+' '+d.f+' '+d.o+' '+d.c).toLowerCase().includes(q));
-$('cnt').textContent=L.length+' of '+D.length+' supplements';$('pnote').innerHTML=pb?`<div class="wr">${P[pb].n}</div>`:'';
-$('list').innerHTML=L.map(d=>`<details><summary><b>${d.n}</b><span class="t">${SL[d.t]}</span>${inPlan(d.i)?'<i class="in">In my day</i>':''}</summary><p>${INFO[d.n]||''}</p><p><span class="k">Forms:</span> ${d.f}</p><p>${d.o}</p>${W[d.n]?`<p class="dz" data-n="${esc(d.n)}">${dz(d.n)}</p>`:''}${bi(d)}<button class="btn ${inPlan(d.i)?'o':''}" onclick="tog(${d.i})">${inPlan(d.i)?'Remove from my day':'Add to my day'}</button></details>`).join('')||'<p class="em">No match.</p>'}
 const R=(x,n=0)=>{const f=10**n;return Math.round(x*f)/f},cl=(x,a,b)=>Math.max(a,Math.min(b,x));
 const W={
 'Creatine':(k)=>`${R(cl(k*.03,3,10),1)}-${R(cl(k*.07,3,10),1)} g daily (about ${R(cl(k*.05,3,10),1)} g). Any time; no loading needed.`,
@@ -398,39 +416,164 @@ const W={
 'Vitamin D3':(k,l)=>`${l<165?'1,000-2,000':l<220?'2,000-3,000':'3,000-4,000'} IU daily. Heavier bodies often need the higher end. Test your level; 4,000 IU is the usual upper limit.`
 };
 const dz=n=>W[n]?W[n](S.wt/2.2046,S.wt):'',sug=n=>dz(n);
-function setW(v){S.wt=+v;save();$('wv').textContent=v+' lb ('+R(v/2.2046)+' kg)';document.querySelectorAll('[data-n]').forEach(e=>e.innerHTML=dz(e.dataset.n));if(!$('v2').hidden)day()}
-const TM={a:'06:30',b:'07:30',l:'12:00',d:'18:00',s:'21:30'},SK=Object.keys(SL).filter(k=>k!=='x');
+const TM={a:'06:30',b:'07:30',l:'12:00',d:'18:00',s:'21:30'},SK=['a','b','l','d','s'];
+const SN={a:'Wake-up',b:'Breakfast',l:'Lunch',d:'Dinner',s:'Bedtime'},SC={a:'var(--s1)',b:'var(--s2)',l:'var(--s3)',d:'var(--s4)',s:'var(--s5)'};
+const CC={Minerals:'#6b8fbd',Vitamins:'#e8863a',Herbs:'#3f9b63','Amino acids':'#8b6fd0',Fats:'#2aa3a3',Gut:'#b9814a',Sleep:'#5a5fc7',Joints:'#c76b8a',Antioxidants:'#c9a227',Performance:'#d9534f'};
+const PK=Object.keys(P),SHORT=['Wormwood','Black walnut hull','Oregano oil','Kava','Valerian'];
+const IC={today:'<circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/>',lib:'<rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/>',plans:'<path d="M4 7h10M4 12h10M4 17h6M18 14v6M15 17h6"/>',set:'<path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/>',check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>',plus:'<path d="M12 5v14M5 12h14"/>',chev:'<path d="M9 6l6 6-6 6"/>'};
+const ic=(n,w=2)=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round">${IC[n]}</svg>`;
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const G={
+pill:'<rect x="2.5" y="8.5" width="19" height="7" rx="3.5" transform="rotate(-45 12 12)"/><path d="M9.5 9.5l5 5"/>',
+leaf:'<path d="M5 19C5 10 10 5 19 5c0 9-5 14-14 14z"/><path d="M5 19L14 10"/>',
+drop:'<path d="M12 3.5c3.5 4 6 7 6 10a6 6 0 0 1-12 0c0-3 2.5-6 6-10z"/>',
+flame:'<path d="M12 3c.5 4 5 5.5 5 10.500a5 5 0 0 1-10 0c0-2 1-3.500 2.500-4.500C9.500 9 11.500 7.500 12 3z"/>',
+bulb:'<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.500 10.900c.7.6 1 1.400 1 2.100h5c0-.7.3-1.500 1-2.100A6 6 0 0 0 12 3z"/>',
+heart:'<path d="M12 20s-7.500-4.500-7.500-10.200A4.200 4.200 0 0 1 12 7.500a4.200 4.200 0 0 1 7.500 2.300C19.500 15.500 12 20 12 20z"/>',
+moon:'<path d="M20 14.500A8 8 0 1 1 9.500 4a6.500 6.500 0 0 0 10.500 10.500z"/>',
+sun:'<circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.600 5.600l1.400 1.400M17 17l1.400 1.400M18.400 5.600L17 7M7 17l-1.400 1.400"/>',
+bolt:'<path d="M13 3L5 13.500h6L10 21l8-10.500h-6z"/>',
+shield:'<path d="M12 3l7 3v5.500c0 4.500-3 7.500-7 9.500-4-2-7-5-7-9.500V6z"/><path d="M9 12l2.200 2.200L15 10"/>',
+flask:'<path d="M9 3h6M10 3v6L5 18.500A1.500 1.500 0 0 0 6.300 21h11.400a1.500 1.500 0 0 0 1.300-2.500L14 9V3"/><path d="M7.500 15h9"/>',
+fish:'<path d="M3 12c3-4.500 8-5.500 12-3l5-2.500v11L15 15c-4 2.500-9 1.500-12-3z"/><circle cx="8.500" cy="11" r=".6"/>',
+mush:'<path d="M4 12a8 7 0 0 1 16 0z"/><path d="M10 12v5a2 2 0 0 0 4 0v-5"/>',
+berry:'<circle cx="8.500" cy="14.500" r="4"/><circle cx="15.500" cy="14.500" r="4"/><path d="M12 10.500C12 7 13 5 16 4"/>',
+dumb:'<path d="M6.500 7v10M17.500 7v10M3.500 9.500v5M20.500 9.500v5M6.500 12h11"/>',
+eye:'<path d="M2.500 12S6 5.500 12 5.500 21.500 12 21.500 12 18 18.500 12 18.500 2.500 12 2.500 12z"/><circle cx="12" cy="12" r="3"/>',
+batt:'<rect x="3" y="7.500" width="16" height="9" rx="2"/><path d="M21 10.500v3M11.500 9.500l-2 3h3l-1 2.500"/>',
+dna:'<path d="M8 3c0 5 8 5 8 9s-8 4-8 9M16 3c0 5-8 5-8 9s8 4 8 9"/><path d="M9 7h6M9 17h6"/>',
+micro:'<circle cx="12" cy="12" r="4.500"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.600 5.600l2 2M16.400 16.400l2 2M18.400 5.600l-2 2M7.600 16.400l-2 2"/>',
+joint:'<circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M9.200 9.200l5.600 5.600"/>',
+gem:'<path d="M7 4h10l4 5-9 11L3 9z"/><path d="M3 9h18M9 4l-1 5 4 11 4-11-1-5"/>',
+wave:'<path d="M3 8c2.500 0 2.500 2 5 2s2.500-2 5-2 2.500 2 5 2 2.500-2 3-2M3 14c2.500 0 2.500 2 5 2s2.500-2 5-2 2.500 2 5 2 2.500-2 3-2"/>',
+wheat:'<path d="M12 21V7M12 7c-3 0-4.500-2-4.500-4 3 0 4.500 2 4.500 4zM12 7c3 0 4.500-2 4.500-4-3 0-4.500 2-4.500 4zM12 13c-3 0-4.500-2-4.500-4 3 0 4.500 2 4.500 4zM12 13c3 0 4.500-2 4.500-4-3 0-4.500 2-4.500 4z"/>',
+cup:'<path d="M5 8h11v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M16 10h1.500a2.500 2.500 0 0 1 0 5H16M8 3v2M12 3v2"/>',
+wind:'<path d="M3 9h10a2.500 2.500 0 1 0-2.500-2.500M3 15h14a2.500 2.500 0 1 1-2.500 2.500M3 12h7"/>',
+plate:'<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/>',
+sunrise:'<path d="M3 19h18M7 19a5 5 0 0 1 10 0M12 6v4M9.500 8L12 5.500 14.500 8M5.600 12.600l1.400 1.400M18.400 12.600L17 14"/>',
+sunset:'<path d="M3 19h18M7 19a5 5 0 0 1 10 0M12 5.500v4M9.500 7.500l2.500 2.500 2.500-2.500M5.600 12.600l1.400 1.400M18.400 12.600L17 14"/>'};
+const IMAP={};
+`bolt|Magnesium malate;Electrolytes;Beta-alanine;Caffeine;L-tyrosine;Carnitine;Taurine;Vitamin B12;B-complex;Rhodiola;Panax ginseng;Cordyceps
+moon|Magnesium glycinate;Melatonin;Glycine;Valerian;Passionflower;Lemon balm;Apigenin;5-HTP;GABA;Inositol;Kava
+gem|Magnesium citrate;Shilajit;Zinc carnosine
+flask|Magnesium oxide;NAC;Alpha-lipoic acid;Glutathione;Modified citrus pectin;Betaine HCl;TMG (betaine);Glutamine;Chlorella
+drop|Magnesium topical;Hyaluronic acid;Black seed oil;Oregano oil;Peppermint oil;Pumpkin seed oil
+wave|Iodine;Algae omega-3
+fish|Fish oil;Krill oil;Astaxanthin
+bulb|Magnesium L-threonate;Bacopa;Ginkgo;Choline;Phosphatidylserine;L-theanine;Holy basil;Lion's mane
+heart|Magnesium taurate;Aged garlic;Niacin (B3);Vitamin E
+sun|Vitamin D3
+shield|Vitamin C;Elderberry;Quercetin;Zinc;Vitamin A;Selenium
+mush|Reishi
+berry|Tart cherry;Resveratrol;Lycopene;Sulforaphane
+dumb|Creatine;Whey protein;EAAs / BCAAs;L-citrulline;Collagen;Beetroot nitrate
+eye|Lutein + zeaxanthin
+dna|Spermidine;Urolithin A;PQQ;Folate;Vitamin B6;Biotin
+batt|NR / NMN;CoQ10;Benfotiamine (B1);Riboflavin (B2)
+joint|Vitamin K2;Calcium
+wheat|Prebiotic fiber;Psyllium husk;Fenugreek
+cup|Green tea extract
+flame|Turmeric / curcumin;Boswellia;Ginger
+pill|Multivitamin;DGL licorice;Mastic gum`.split('\n').forEach(r=>{const[k,l]=r.split('|');l.split(';').forEach(n=>IMAP[n]=k)});
+const CD={Minerals:'gem',Vitamins:'pill',Herbs:'leaf','Amino acids':'dna',Fats:'drop',Gut:'micro',Sleep:'moon',Joints:'joint',Antioxidants:'shield',Performance:'bolt','Picks for 50+':'heart','Scales with weight':'dumb'};
+const PI={'H. pylori':'micro','Parasites':'micro','Heavy metals':'flask','Headache':'bolt','Muscle pain':'dumb','Muscle cramps':'bolt','Joint pain':'joint','Inflammation':'flame','Poor sleep':'moon','Stress / anxiety':'wind','Low energy':'batt','Brain fog':'bulb','Bloating / digestion':'micro','Prostate / urination':'drop','Low drive / hormones':'dna','Blood pressure':'heart','Blood sugar':'drop','Heart / cholesterol':'heart','Immune / colds':'shield','Nerve tingling':'bolt','Eye health':'eye'};
+const SEI={a:'sunrise',b:'cup',l:'plate',d:'sunset',s:'moon'};
+const gi=(n,c)=>n&&G[n]?`<svg class="ci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"${c?` style="color:${c}"`:''}>${G[n]}</svg>`:'';
+const ico=(d,z='')=>`<span class="ic ${z}" style="background:${CC[d.c]}26;color:${CC[d.c]}">${gi(IMAP[d.n]||CD[d.c])}</span>`;
+const pic=(p,z='')=>`<span class="ic ${z}" style="background:var(--acs);color:var(--ac)">${gi(PI[p])}</span>`;
+const lk=p=>p.i>=0?`<a class="lk" onclick="openSup(${p.i})">${esc(p.n)}</a>`:esc(p.n);
+const TH={Ocean:['#1769e0','#dbe9ff','#fff','#6aaeff','#14294d','#06121f'],Forest:['#1b7f4b','#d6f1e2','#fff','#4fd18b','#12301f','#06190f'],Sunset:['#d9552b','#ffe3d8','#fff','#ff8a5c','#3a1e12','#1f0c04'],Plum:['#7a3ee0','#eadfff','#fff','#ad8cff','#251a47','#0f0824'],Graphite:['#2b3340','#e6e9ee','#fff','#d3dae4','#2a313a','#101418']};
+function applyTheme(){const r=document.documentElement,m=S.mode||'auto';
+if(m==='auto')r.removeAttribute('data-theme');else r.setAttribute('data-theme',m);
+let dk=m==='dark';if(m==='auto'){try{dk=matchMedia('(prefers-color-scheme: dark)').matches}catch(e){}}
+const t=TH[S.th||'Ocean'];r.style.setProperty('--ac',dk?t[3]:t[0]);r.style.setProperty('--acs',dk?t[4]:t[1]);r.style.setProperty('--on',dk?t[5]:t[2])}
+function setTh(k){S.th=k;save();applyTheme();render()}
 const uid=()=>'k'+Date.now().toString(36)+Math.random().toString(36).slice(2,5);
-const ds=i=>D[i].t==='x'?'l':D[i].t,tm=t=>S.times[t]||TM[t],inPlan=i=>S.plan.some(p=>p.i===i),gf=p=>p.i>=0?D[p.i].g:'';
-function tog(i){if(inPlan(i))S.plan=S.plan.filter(p=>p.i!==i);else S.plan.push({k:uid(),i,n:D[i].n,s:ds(i),d:''});save();const o=[...document.querySelectorAll('details[open] summary b')].map(b=>b.textContent);lib();document.querySelectorAll('details').forEach(e=>{if(o.includes(e.querySelector('b').textContent))e.open=true})}
-function warn(){const W=[],by={};
+const ds=i=>D[i].t==='x'?'l':D[i].t,tm=t=>S.times[t]||TM[t],inPlan=i=>S.plan.some(p=>p.i===i),gf=p=>p.i>=0?D[p.i].g:'',gp=k=>S.plan.find(p=>p.k===k);
+const opt=sel=>SK.map(k=>`<option value="${k}" ${k===sel?'selected':''}>${SN[k]}</option>`).join('');
+let tab=S.home==='today'?'today':'lib',Q='',cat='All',pick=false,sw=false,pb='',SH=null,pv='',PS=new Set(),cf=0;
+
+function warn(){const W2=[],by={};
 S.plan.forEach(p=>(by[p.s]=by[p.s]||[]).push(p));
-for(const t in by){const z=by[t].filter(x=>gf(x).includes('z'));if(z.length>1)W.push(z.map(x=>x.n).join(' + ')+' compete for absorption. Space them 2+ hours apart.')}
-S.plan.forEach(x=>{if(gf(x).includes('e')&&(x.s==='s'||x.s==='d'))W.push(x.n+' can be stimulating. Move it earlier.')});
+for(const t in by){const z=by[t].filter(x=>gf(x).includes('z'));if(z.length>1)W2.push(z.map(lk).join(' + ')+' compete for absorption. Space them 2+ hours apart.')}
+S.plan.forEach(x=>{if(gf(x).includes('e')&&(x.s==='s'||x.s==='d'))W2.push(lk(x)+' can be stimulating. Move it earlier.')});
 const has=r=>S.plan.some(x=>r.test(x.n));
-if(has(/^Zinc/)&&!has(/^Copper/))W.push('Long-term zinc can drain copper. Consider 1-2 mg copper.');
-if(new Set(S.plan.filter(x=>/^Magnesium/.test(x.n)).map(x=>x.n)).size>1)W.push('Several magnesium forms: keep total supplemental elemental magnesium near 400 mg.');
-return W}
-function day(){const dn=S.done[today()]||{},L0=S.plan;
-let h=warn().map(w=>`<div class="wr">${w}</div>`).join('');
-h+=L0.length?`<div class="em">${L0.filter(p=>dn[p.k]).length} of ${L0.length} taken today. Tap a time to change it.</div>`:'<p>Your plan is empty. Add from the Library, add your own below, or start with a basic stack.</p><button class="btn" onclick="starter()">Add starter stack for 50+</button>';
-const opt=sel=>SK.map(k=>`<option value="${k}" ${k===sel?'selected':''}>${SL[k].split(',')[0]}</option>`).join('');
-SK.forEach(t=>{const L=L0.filter(p=>p.s===t);if(!L.length)return;
-h+=`<h2>${SL[t]}<input type="time" value="${tm(t)}" onchange="stm('${t}',this.value)"></h2>`+L.map(p=>`<div class="row"><input type="checkbox" ${dn[p.k]?'checked':''} onchange="chk('${p.k}',this.checked)"><div class="nm"><span class="${dn[p.k]?'dn':''}">${esc(p.n)}</span><input class="ds" placeholder="${esc(sug(p.n)||'dose / brand / notes')}" value="${esc(p.d)}" onchange="sd('${p.k}',this.value)"></div><select onchange="mv('${p.k}',this.value)">${opt(t)}</select><button class="x sp" onclick="dup('${p.k}')">split</button><button class="x" onclick="rm('${p.k}')">×</button></div>`).join('')});
-h+=`<h2>Add your own</h2><div class="row add"><input id="cn" placeholder="Name"><input id="cd" placeholder="Dose"><select id="cs">${opt('b')}</select><button class="btn" style="margin:0" onclick="addc()">Add</button></div><h2>Plan tools</h2><button class="btn" onclick="cp()">Copy plan for reminders</button> <button class="btn o" onclick="rs(event)">Clear plan</button><textarea id="out" hidden readonly></textarea>`;
-$('day').innerHTML=h}
-function chk(k,v){const t=today();S.done[t]=S.done[t]||{};if(v)S.done[t][k]=1;else delete S.done[t][k];save();day()}
-const gp=k=>S.plan.find(p=>p.k===k);
-function mv(k,t){gp(k).s=t;save();day()}
-function sd(k,v){gp(k).d=v;save()}
+if(has(/^Zinc$/)&&!has(/^Copper$/))W2.push('Long-term zinc can drain copper. Consider 1-2 mg copper.');
+if(new Set(S.plan.filter(x=>/^Magnesium/.test(x.n)).map(x=>x.n)).size>1)W2.push('Several magnesium forms: keep total supplemental elemental magnesium near 400 mg.');
+return W2}
+
+/* ---------- views ---------- */
+function render(){const v={today:vToday,lib:vLib,set:vSet}[tab]();$('view').innerHTML=v;
+$('tabs').innerHTML=[['lib','Library'],['today','My Plan'],['set','Settings']].map(([k,l])=>`<button class="${tab===k?'on':''}" onclick="go('${k}')">${ic(k)}<span>${l}</span></button>`).join('');
+if(tab==='lib'){fillChips();fillLib()}}
+function go(t){tab=t;window.scrollTo(0,0);render()}
+function refresh(){tab==='lib'?fillLib():render();if(SH)showSheet()}
+
+function row(p,dn){const sub=[p.d&&esc(p.d),p.pl&&'For '+esc(p.pl)].filter(Boolean).join(', ');
+return `<div class="it ${dn[p.k]?'dn':''}"><button class="ck ${dn[p.k]?'on':''}" style="--c:${SC[p.s]}" aria-label="Mark taken" onclick="chk('${p.k}')">${ic('check',3.2)}</button>${p.i>=0?ico(D[p.i],'sm'):ico({n:'',c:'Vitamins'},'sm')}<div class="tx" onclick="openItem('${p.k}')"><div class="nm">${esc(p.n)}</div>${sub?`<div class="ds">${sub}</div>`:''}</div>${ic('chev')}</div>`}
+function planTiles(){const act=[...new Set(S.plan.filter(x=>x.pl).map(x=>x.pl))];let h='';
+if(act.length)h+=`<div class="sh" style="margin-top:24px"><h3>Your problem plans</h3></div><div class="grp">${act.map(a=>`<div class="it" onclick="openPlanSheet(${PK.indexOf(a)})">${pic(a)}<div class="tx"><div class="nm">${esc(a)}</div><div class="ds">${S.plan.filter(x=>x.pl===a).length} supplements in your plan</div></div>${ic('chev')}</div>`).join('')}</div>`;
+return h+`<div class="sh" style="margin-top:24px"><h3>Add a plan for a problem</h3></div><div class="tiles">${PK.map((p,i)=>`<button class="tile" onclick="openPlanSheet(${i})">${pic(p,'sm')}<span class="t">${p}</span></button>`).join('')}</div>`}
+function vToday(){const L=S.plan,dn=S.done[today()]||{},n=L.filter(p=>dn[p.k]).length,C=213.6;
+const dt=new Date().toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'});
+let h=`<header class="top"><div><div class="mut">${dt}</div><h1>My Plan</h1></div><button class="rb" aria-label="Add your own" onclick="openSheet({t:'add'})">${ic('plus',2.5)}</button></header>`;
+if(!L.length)return h+`<div class="prog" style="display:block"><b>Build your plan</b><div class="mut" style="margin:4px 0 8px">Start with the basics, pick a problem below, or browse the library.</div><button class="btn" onclick="starter()">Start with the basics</button><button class="btn o" onclick="go('lib')">Browse the library</button></div>`+planTiles();
+h+=`<div class="prog"><svg width="84" height="84" viewBox="0 0 84 84"><circle cx="42" cy="42" r="34" fill="none" stroke="var(--ln)" stroke-width="9"/><circle cx="42" cy="42" r="34" fill="none" stroke="var(--ac)" stroke-width="9" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-n/L.length)}" transform="rotate(-90 42 42)"/></svg><div><b>${n} of ${L.length} taken</b><span class="mut">${n===L.length?'All done for today':(L.length-n)+' to go'}</span></div></div>`;
+h+=warn().map(w=>`<div class="bn">${w}</div>`).join('');
+SK.forEach(t=>{const I=L.filter(p=>p.s===t);if(!I.length)return;
+h+=`<section class="slot"><div class="sh"><span class="se" style="color:${SC[t]}">${gi(SEI[t])}</span><h3>${SN[t]}</h3><input type="time" value="${tm(t)}" onchange="stm('${t}',this.value)"></div><div class="grp">${I.map(p=>row(p,dn)).join('')}</div></section>`});
+return h+planTiles()}
+
+function vLib(){return `<header class="top"><div><h1>Library</h1><div class="mut" id="cnt"></div></div></header><input class="search" id="q" type="search" placeholder="Search supplements or problems" value="${esc(Q)}" oninput="Q=this.value;fillLib()"><div class="chips" id="lc"></div><div class="chips" id="lp"></div><div id="ll"></div>`}
+function fillChips(){const C=['All','Picks for 50+','Scales with weight',...new Set(D.map(d=>d.c))];
+$('lc').innerHTML=C.map(c=>`<button class="chip ${(c==='Picks for 50+'?pick:c==='Scales with weight'?sw:cat===c&&!pick&&!sw&&!pb)?'on':''}" onclick="setCat('${c}')">${gi(CD[c],CC[c])}${c}</button>`).join('');
+$('lp').innerHTML=PK.map((p,i)=>`<button class="chip pr ${pb===p?'on':''}" onclick="setProb(${i})">${gi(PI[p])}${p}</button>`).join('')}
+function setCat(c){pb='';pick=c==='Picks for 50+';sw=c==='Scales with weight';cat=pick||sw?'All':c;fillChips();fillLib()}
+function setProb(i){const p=PK[i];pb=pb===p?'':p;if(pb){cat='';pick=false;sw=false}else cat='All';fillChips();fillLib()}
+function fillLib(){const q=Q.toLowerCase();
+const L=D.filter(d=>(pb?P[pb].s.has(d.i):(cat==='All'||d.c===cat))&&(!pick||d.g.includes('5'))&&(!sw||W[d.n])&&(d.n+' '+d.f+' '+d.o+' '+d.c).toLowerCase().includes(q));
+if($('cnt'))$('cnt').textContent=L.length+' of '+D.length+' supplements';
+$('ll').innerHTML=(pb?`<div class="bn">${P[pb].n}</div>`:'')+(L.length?`<div class="grp">${L.map(d=>`<div class="it" onclick="openSup(${d.i})">${ico(d)}<div class="tx"><div class="nm">${d.n}</div><div class="ds">${SL[d.t]}</div></div>${inPlan(d.i)?'<span class="in">In my plan</span>':`<button class="ad" aria-label="Add to my plan" onclick="event.stopPropagation();quick(${d.i})">${ic('plus',2.5)}</button>`}</div>`).join('')}</div>`:'<p class="mut">No match.</p>')}
+
+const ABOUT=`Brand picks are common third-party-tested options from general knowledge, and formulas change. Look for USP, NSF, Informed Sport or ConsumerLab seals and check the bottle. Weight-based doses are typical research ranges, not a prescription. Other supplements use fixed doses that don't change with weight. Check with your doctor before adding anything, especially if you start taking medications.`;
+function vSet(){return `<header class="top"><div><h1>Settings</h1></div></header>
+<div class="sh"><h3>Body weight</h3></div><div class="grp"><div class="it" style="display:block;cursor:default"><div style="display:flex;justify-content:space-between;align-items:baseline"><b id="wv" style="font-size:28px">${S.wt} lb</b><span class="mut" id="wk">${R(S.wt/2.2046)} kg</span></div><input type="range" id="wr" min="100" max="350" step="5" value="${S.wt}" oninput="setW(this.value)" style="width:100%;accent-color:var(--ac);margin-top:10px"><div class="mut" style="margin-top:6px">Changes the doses shown for the 7 supplements that scale with weight.</div></div></div>
+<div class="sh" style="margin-top:22px"><h3>Daily times</h3></div><div class="grp">${SK.map(t=>`<div class="it" style="cursor:default"><span class="se" style="color:${SC[t]}">${gi(SEI[t])}</span><div class="tx nm">${SN[t]}</div><input type="time" value="${tm(t)}" onchange="stm('${t}',this.value)"></div>`).join('')}</div>
+<div class="sh" style="margin-top:22px"><h3>Look</h3></div><div class="grp"><div class="sw">${Object.keys(TH).map(k=>`<button class="swb ${(S.th||'Ocean')===k?'on':''}" onclick="setTh('${k}')"><i style="background:${TH[k][0]}"></i>${k}</button>`).join('')}</div><div class="it" style="cursor:default"><div class="tx nm">Appearance</div><select class="sel" onchange="S.mode=this.value;save();applyTheme()">${[['auto','Match phone'],['light','Light'],['dark','Dark']].map(([v,l])=>`<option value="${v}" ${(S.mode||'auto')===v?'selected':''}>${l}</option>`).join('')}</select></div><div class="it" style="cursor:default"><div class="tx nm">Open app on</div><select class="sel" onchange="S.home=this.value;save()">${[['lib','Library'],['today','My Plan']].map(([v,l])=>`<option value="${v}" ${(S.home||'lib')===v?'selected':''}>${l}</option>`).join('')}</select></div></div>
+<div class="sh" style="margin-top:22px"><h3>Plan tools</h3></div><button class="btn" onclick="cp()">Copy plan for reminders</button><textarea id="out" hidden readonly></textarea><button class="btn dg" onclick="rs(event)">Clear my plan</button>
+<p class="mut" style="font-size:13px;margin-top:22px">${ABOUT}</p>`}
+
+/* ---------- sheets ---------- */
+function openSheet(o){SH=o;showSheet();$('sheet').scrollTop=0;$('shade').classList.add('on');$('sheet').classList.add('on')}
+function closeSheet(){if(SH&&SH.from){SH=SH.from;showSheet();return}SH=null;$('shade').classList.remove('on');$('sheet').classList.remove('on');tab==='lib'?fillLib():render()}
+function showSheet(){const b={sup:()=>shSup(SH.i),item:()=>shItem(SH.k),plan:shPlan,add:shAdd}[SH.t]();$('sheet').innerHTML='<div class="grab"></div>'+b+'<button class="btn o" onclick="closeSheet()">'+(SH.from?'Back':'Close')+'</button>'}
+function openSup(i,from){openSheet({t:'sup',i,from:from||null})}
+function openItem(k){const p=gp(k);p.i>=0?openSup(p.i):openSheet({t:'item',k})}
+function edit(p){return `<div class="box"><div class="fld"><label>Time of day</label><select onchange="mv('${p.k}',this.value)">${opt(p.s)}</select></div><div class="fld"><label>Dose, brand, notes</label><input value="${esc(p.d)}" placeholder="${esc(sug(p.n)||'e.g. 400 mg, Thorne')}" onchange="sd('${p.k}',this.value)"></div><div class="row2"><button class="btn o" onclick="dup('${p.k}')">Split to another time</button><button class="btn dg" onclick="rm('${p.k}')">Remove</button></div></div>`}
+function shSup(i){const d=D[i],ps=S.plan.filter(p=>p.i===i),by=X[d.n]||CB[d.c];
+return `<div class="sh2">${ico(d,'lg')}<div><h2>${d.n}</h2><div class="mut">${d.c}. Best: ${SL[d.t].toLowerCase()}.</div></div></div><p>${INFO[d.n]||''}</p><div class="box"><b>Forms</b>${d.f}</div><div class="box"><b>Dose and timing</b>${d.o}${W[d.n]?`<br><br>At ${S.wt} lb: ${dz(d.n)}`:''}</div>`+(by?`<div class="box"><b>Good picks</b>${by[0]}</div><div class="box"><b>Avoid</b>${by[1]}</div>`:'')+(ps.length?ps.map(edit).join(''):`<button class="btn" onclick="quick(${i})">Add to my plan</button>`)+`<p class="mut" style="font-size:13px">General info, not medical advice.</p>`}
+function shItem(k){const p=gp(k);return p?`<div class="sh2"><h2>${esc(p.n)}</h2></div>`+edit(p):''}
+function openPlanSheet(i){pv=PK[i];PS=new Set([...P[pv].s].filter(x=>!SHORT.includes(D[x].n)&&!inPlan(x)).slice(0,6));openSheet({t:'plan'})}
+function shPlan(){const L=[...P[pv].s],act=S.plan.some(x=>x.pl===pv);
+return `<div class="sh2">${pic(pv,'lg')}<div><h2>${pv}</h2><div class="mut">${L.length} supplements</div></div></div><div class="bn">${P[pv].n}</div><div class="grp">${L.map(i=>`<div class="it"><input type="checkbox" class="cb" ${PS.has(i)?'checked':''} ${inPlan(i)?'disabled':''} onchange="pt(${i})">${ico(D[i],'sm')}<div class="tx" onclick="openSup(${i},SH)"><div class="nm lk">${D[i].n}</div><div class="ds">${inPlan(i)?'Already in your plan':SN[ds(i)]+(SHORT.includes(D[i].n)?', short-term only':'')}</div></div>${ic('chev')}</div>`).join('')}</div><button class="btn" onclick="addPlan()">Add checked to my plan</button>`+(act?`<button class="btn dg" onclick="rmPlan()">Remove this problem plan</button>`:'')}
+function shAdd(){return `<div class="sh2"><h2>Add your own</h2></div><div class="fld"><label>Name</label><input id="cn" placeholder="e.g. Magnesium glycinate"></div><div class="fld"><label>Dose</label><input id="cd" placeholder="e.g. 400 mg"></div><div class="fld"><label>Time of day</label><select id="cs">${opt('b')}</select></div><button class="btn" onclick="addc()">Add to my plan</button>`}
+
+/* ---------- actions ---------- */
+function quick(i){if(!inPlan(i))S.plan.push({k:uid(),i,n:D[i].n,s:ds(i),d:''});save();refresh()}
+function chk(k){const t=today();S.done[t]=S.done[t]||{};if(S.done[t][k])delete S.done[t][k];else S.done[t][k]=1;save();render()}
+function mv(k,t){gp(k).s=t;save();refresh()}
+function sd(k,v){gp(k).d=v;save();if(tab==='today')render()}
 function stm(t,v){S.times[t]=v;save()}
-function rm(k){S.plan=S.plan.filter(p=>p.k!==k);save();day()}
-function dup(k){const p=gp(k);S.plan.push({...p,k:uid(),s:SK[(SK.indexOf(p.s)+1)%SK.length]});save();day()}
-function addc(){const n=$('cn').value.trim();if(!n)return;const m=D.findIndex(d=>d.n.toLowerCase()===n.toLowerCase());S.plan.push({k:uid(),i:m,n:m>=0?D[m].n:n,s:$('cs').value,d:$('cd').value.trim()});save();day()}
-function starter(){START.forEach(n=>{const i=D.findIndex(d=>d.n===n);if(i>=0&&!inPlan(i))S.plan.push({k:uid(),i,n,s:ds(i),d:''})});save();day()}
-let cf=0;function rs(e){if(!cf){cf=1;e.target.textContent='Tap again to clear';return}cf=0;S.plan=[];save();day()}
-function cp(){const t='MY SUPPLEMENT PLAN\n'+SK.map(k=>{const L=S.plan.filter(p=>p.s===k);return L.length?SL[k]+' ('+tm(k)+'): '+L.map(p=>p.n+((p.d||sug(p.n))?' '+(p.d||sug(p.n)):'')).join(', '):''}).filter(Boolean).join('\n'),o=$('out');o.hidden=false;o.value=t;o.select();try{navigator.clipboard.writeText(t)}catch(e){}}
-$('wr').value=S.wt;$('wv').textContent=S.wt+' lb ('+R(S.wt/2.2046)+' kg)';
-chips();pchips();lib();
+function rm(k){S.plan=S.plan.filter(p=>p.k!==k);save();if(SH&&SH.t==='item')closeSheet();else refresh()}
+function dup(k){const p=gp(k);S.plan.push({...p,k:uid(),s:SK[(SK.indexOf(p.s)+1)%SK.length]});save();refresh()}
+function addc(){const n=$('cn').value.trim();if(!n)return;const m=D.findIndex(d=>d.n.toLowerCase()===n.toLowerCase());S.plan.push({k:uid(),i:m,n:m>=0?D[m].n:n,s:$('cs').value,d:$('cd').value.trim()});save();closeSheet()}
+function starter(){START.forEach(n=>{const i=D.findIndex(d=>d.n===n);if(i>=0&&!inPlan(i))S.plan.push({k:uid(),i,n,s:ds(i),d:''})});save();render()}
+function pt(i){PS.has(i)?PS.delete(i):PS.add(i)}
+function addPlan(){[...PS].forEach(i=>{if(!inPlan(i))S.plan.push({k:uid(),i,n:D[i].n,s:ds(i),d:'',pl:pv})});save();closeSheet()}
+function rmPlan(){S.plan=S.plan.filter(x=>x.pl!==pv);save();closeSheet()}
+function setW(v){S.wt=+v;save();$('wv').textContent=v+' lb';$('wk').textContent=R(v/2.2046)+' kg'}
+function rs(e){if(!cf){cf=1;e.target.textContent='Tap again to clear';return}cf=0;S.plan=[];save();render()}
+function cp(){const t='MY SUPPLEMENT PLAN\n'+SK.map(k=>{const L=S.plan.filter(p=>p.s===k);return L.length?SN[k]+' ('+tm(k)+'): '+L.map(p=>p.n+(p.d?' '+p.d:'')+(p.pl?' [for '+p.pl+']':'')).join(', '):''}).filter(Boolean).join('\n'),o=$('out');o.hidden=false;o.value=t;o.select();try{navigator.clipboard.writeText(t)}catch(e){}}
+applyTheme();try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',applyTheme)}catch(e){}
+render();
 </script></body></html>
